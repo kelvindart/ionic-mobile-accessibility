@@ -11,4 +11,15 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-range debounce="400" min="0" max="200" step="10" snaps="true" pin="true" [(ngModel)]="zoomLevel" (ionChange)="updateZoom()">
+        <ion-label range-left>0%</ion-label>
+        <ion-label range-right>200%</ion-label>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
 </ion-content>
